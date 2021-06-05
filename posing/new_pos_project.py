@@ -2,7 +2,7 @@ import cv2
 import time
 import PosModule as pm
 
-cap = cv2.VideoCapture('PosVideos/5.mp4')
+cap = cv2.VideoCapture('Videos/move1.mp4')
 # cap.set(cv2.CAP_PROP_FRAME_WIDTH, 720)
 # cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 detector = pm.poseDetector()

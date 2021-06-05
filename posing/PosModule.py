@@ -9,7 +9,7 @@ class poseDetector():
         self.pose = self.mpPose.Pose(mode ,upBody, smooth, detectionCon, trackCon)
 
     def findPose(self, img, draw=True):   
-        img = cv2.resize(img, (720,480))
+        #img = cv2.resize(img, (720,480))
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.pose.process(imgRGB)
         if  self.results.pose_landmarks:
